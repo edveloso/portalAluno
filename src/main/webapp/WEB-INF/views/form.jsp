@@ -1,30 +1,51 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"  %> 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+   rel="stylesheet" >
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
+	
+	<div class="navbar navbar-inverse"> 
+	 <a class="navbar-brand" href="#">Portal Aluno</a>		
+	</div>
+	
 
+	<div  class="container" >   
 	<fieldset>
 		<legend>Cadastro de Alunos</legend>
-		<form action="">
-			<p>
-				Nome <input type="text">
-			</p>
-			<p>
-				Idade <input type="text">
-			</p>
+		<form action="salvar" method="post" >
+			<div class="form-group">
+				<label for="nome">Nome</label>  
+				<input type="text"
+				  	   name="nome"
+				  	   class="form-control"
+				  	   placeholder="Informe o nome"     
+				  >
+			</div>
+			<div class="form-group" >
+				<label for="idade">Idade</label>  
+				<input type="text"
+				       name="idade"
+				  	   class="form-control"
+				  	   placeholder="Informe a idade"
+				>
+			</div>
+			<button type="submit" class="btn btn-primary" >
+			      Salvar
+			  </button>
 		</form>
 	</fieldset>
 
 	<br />
 	<br />
-	<hr />
-	<table border="1" width="100%" cellpadding="1" cellspacing="1">
+	
+	<table class="table table-striped" >
 		<tr>
 			<th>Nome</th>
 			<th>Idade</th>
@@ -39,6 +60,14 @@
 		
 	</table>
 
+ </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+  ></script>
 
 </body>
 </html>
+
+
+

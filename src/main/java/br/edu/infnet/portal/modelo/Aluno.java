@@ -6,6 +6,8 @@ public class Aluno {
 	
 	private Integer idade;
 
+	public Aluno() {
+	}
 
 	public Aluno(String nome, Integer idade) {
 		this.nome = nome;
