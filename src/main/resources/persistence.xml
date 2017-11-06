@@ -5,6 +5,6 @@
 	<persistence-unit name="mitjava">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<class>br.edu.infnet.portal.modelo.Aluno</class>
-		<class>br.edu.infnet.portal.modelo.Turma</class>
+<!-- 		<class>br.edu.infnet.portal.modelo.Turma</class> -->
 	</persistence-unit>
 </persistence>

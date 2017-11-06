@@ -49,11 +49,20 @@
 		<tr>
 			<th>Nome</th>
 			<th>Idade</th>
+			<th>#</th>
 		</tr>
 		<c:forEach var="aluno"  items="${lista}">
 			<tr>
 				<td>${aluno.nome}</td>
 				<td>${aluno.idade} </td>
+				<td>
+				  
+				  <a href="">Editar</a>
+				  |
+				  <button class="btn btn-danger" type="submit">
+				  	<i class="glyphicon glyphicon-trash"></i>
+				  </button>
+				</td>
 			</tr>
 		</c:forEach>
 		
